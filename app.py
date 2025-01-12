@@ -10,8 +10,7 @@ def pickler_reader(pickler_name ):
         pickler = pickle.load(file)
     return pickler
 cov_bool = {'No':0 ,'Yes':1}
-st.title("Bank Keeper Churn Alert")
-# CreditScore,Geography,Gender,Age,Tenure,Balance,NumOfProducts,HasCrCard,IsActiveMember,EstimatedSalary,Exited
+st.title("Customer Retention Predictor")
 credit_score = st.slider("Select Credit score", min_value = 300, max_value = 900, step = 1)
 geography = st.radio("Select Geography:", ('Spain', 'France', 'Germany'))
 gender = st.radio("Select Gender:", ('Male', 'Female'))
